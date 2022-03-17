@@ -1,0 +1,16 @@
+<h1>The Following Professors are going to retire within 6 months</h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Desigination</th>
+        <!-- <th>Retirement Date</th> -->
+    </tr>
+    {% for professor in professors %}
+    <tr>
+        <td>{{professor.staff_id}}</td>
+        <td>{{professor.name}}</td>
+        <td>{{professor.designation}}</td>
+        <!-- <td>{{professor.retirement_date}}</td> -->
+    </tr>
+    {% endfor %}
